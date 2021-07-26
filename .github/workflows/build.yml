@@ -11,8 +11,8 @@ jobs:
         node-version: 14
     - name: install dependencies
       run: npm install
-    - name: build
-      run: npm run make
+    - name: package
+      run: npm run package
 
   build_on_mac:
     runs-on: macos-latest
@@ -23,8 +23,8 @@ jobs:
         node-version: 14
     - name: install dependencies
       run: npm install
-    - name: build
-      run: npm run make
+    - name: package
+      run: npm run package
 
   build_on_win:
     runs-on: windows-latest
@@ -35,5 +35,5 @@ jobs:
         node-version: 14
     - name: install dependencies
       run: npm install
-    - name: build
-      run: npm run make
+    - name: package
+      run: npm run package
